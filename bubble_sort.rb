@@ -1,5 +1,6 @@
 def bubble_sort(some_array)
-  while some_array != some_array.sort()
+  times_to_do = some_array.length
+  times_to_do.times do
     some_array.each do |position|
       current_position = some_array.index(position)
       next_position = (some_array.index(position)+1)
